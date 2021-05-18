@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateBolimTable extends Migration
+class CreateMuallifTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,9 +13,12 @@ class CreateBolimTable extends Migration
      */
     public function up()
     {
-        Schema::create('bolim', function (Blueprint $table) {
+        Schema::create('muallif', function (Blueprint $table) {
             $table->id();
-            $table->string('name');
+            $table->string('familya',30);
+            $table->string('ism',30);
+            $table->string('o_ism',30);
+            $table->string('nomi',60);
             $table->timestamps();
         });
     }
@@ -27,6 +30,6 @@ class CreateBolimTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('bolim');
+        Schema::dropIfExists('muallif');
     }
 }

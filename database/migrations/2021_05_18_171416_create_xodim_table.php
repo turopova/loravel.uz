@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateBolimTable extends Migration
+class CreateXodimTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,9 +13,13 @@ class CreateBolimTable extends Migration
      */
     public function up()
     {
-        Schema::create('bolim', function (Blueprint $table) {
+        Schema::create('xodim', function (Blueprint $table) {
             $table->id();
-            $table->string('name');
+            $table->string('ism',30);
+            $table->string('familya',30);
+            $table->string('0_ism',30);
+            $table->date('tug_sana');
+            $table->string('rasm',50);
             $table->timestamps();
         });
     }
@@ -27,6 +31,6 @@ class CreateBolimTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('bolim');
+        Schema::dropIfExists('xodim');
     }
 }
