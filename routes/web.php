@@ -19,4 +19,4 @@ Route::get('/', function () {
 });
 
 Route::get('foydalanuvchi',[FoydalanuvchiController::class,"index"]);
-Route::get('bolim',[FoydalanuvchiController::class,"index"])->name('bolim.index');
+Route::get('foydalanuvchi',[FoydalanuvchiController::class,"index"])->name('foydalanuvchi.index');
