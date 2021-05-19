@@ -8,4 +8,6 @@ use Illuminate\Database\Eloquent\Model;
 class Muallif extends Model
 {
     use HasFactory;
+    protected $table='muallif';
+
 }

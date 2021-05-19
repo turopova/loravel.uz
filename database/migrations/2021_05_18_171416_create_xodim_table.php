@@ -19,7 +19,7 @@ class CreateXodimTable extends Migration
             $table->string('familya',30);
             $table->string('0_ism',30);
             $table->date('tug_sana');
-            $table->string('rasm',50);
+            $table->string('rasm',50)->nullable();
             $table->timestamps();
         });
     }

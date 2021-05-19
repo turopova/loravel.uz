@@ -8,4 +8,5 @@ use Illuminate\Database\Eloquent\Model;
 class Bolim extends Model
 {
     use HasFactory;
+    protected $table='bolim';
 }

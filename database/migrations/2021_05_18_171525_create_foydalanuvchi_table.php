@@ -21,7 +21,7 @@ class CreateFoydalanuvchiTable extends Migration
             $table->date('togilgan_sana');
             $table->string('passport',9);
             $table->string('karta_raqam',14);
-            $table->string('rasm',50);
+            $table->string('rasm',50)->nullable();
             $table->timestamps();
         });
     }

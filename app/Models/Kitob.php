@@ -8,4 +8,6 @@ use Illuminate\Database\Eloquent\Model;
 class Kitob extends Model
 {
     use HasFactory;
+    protected $table='kitob';
+
 }
