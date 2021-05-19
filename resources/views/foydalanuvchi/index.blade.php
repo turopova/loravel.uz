@@ -4,13 +4,13 @@
 
 <div class="container" >
     <ul>
-        @foreach ($list as $foydalanuvchis)
+        @foreach ($list as $foydalanuvchi)
         <li>
-            <a href="/foydalanuvchi/{{ $foydalanuvchis->id }}">
-                {{ $foydalanuvchis->ism}}
-                {{ $foydalanuvchis->familya}}
-                {{ $foydalanuvchis->o_ism}}
-                [ {{ $foydalanuvchis->togilgan_sana}},  {{ $foydalanuvchis->passport}},    {{ $foydalanuvchis->karta_raqam}}]
+            <a href="/foydalanuvchi/{{ $foydalanuvchi->id }}">
+                {{ $foydalanuvchi->ism}}
+                {{ $foydalanuvchi->familya}}
+                {{ $foydalanuvchi->o_ism}}
+                [ {{ $foydalanuvchi->togilgan_sana}},  {{ $foydalanuvchi->passport}},    {{ $foydalanuvchi->karta_raqam}}]
             </a>
         </li>
         @endforeach
