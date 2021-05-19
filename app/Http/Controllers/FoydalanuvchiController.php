@@ -14,7 +14,8 @@ class FoydalanuvchiController extends Controller
      */
     public function index()
     {
-        //
+        $list=Foydalanuvchi::all();
+        return view('foydalanuvchi.index', compact('list'));
     }
 
     /**

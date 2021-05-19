@@ -16,3 +16,6 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('foydalanuvchi',[FoydalanuvchiController::class,"index"]);
+Route::get('bolim',[FoydalanuvchiController::class,"index"])->name('bolim.index');
