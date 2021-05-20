@@ -45,12 +45,12 @@
 
 	   	<nav id="main-nav-wrap">
 				<ul class="main-navigation">
-					<li class="current"><a class="smoothscroll"  href="#intro" title="">Home</a></li>
-					<li><a class="smoothscroll"  href="#process" title="">Process</a></li>
-					<li><a class="smoothscroll"  href="#features" title="">Features</a></li>
+					<li class="current"><a class="smoothscroll"  href="#intro" title="">Bosh sahifa</a></li>
+					<li><a class="smoothscroll"  href="#process" title="">Kitoblar</a></li>
+					<li><a class="smoothscroll"  href="#features" title="">Xodimlar</a></li>
 					<li><a class="smoothscroll"  href="#pricing" title="">Pricing</a></li>
 					<li><a class="smoothscroll"  href="#faq" title="">FAQ</a></li>					
-					<li class="highlight with-sep"><a href="#" title="">Sign Up</a></li>					
+					<li class="highlight with-sep"><a href="#id" title="">Ro'yxatda o'tish</a></li>					
 				</ul>
 			</nav>
 
@@ -76,10 +76,10 @@
 	   				<a href="#video-popup"><img src="{{ asset('vi/images/play-button.png') }}" alt=""></a>
 	   			    </div>
                 -->
-	   			<h5>Hello welcome to lhander.</h5>
-	   			<h1>Our awesome app will make your life a lot easier.</h1>
+	   			<h5>Assalomu alaykum</h5>
+	   			<h1>Kutubxonamizga xush kelibsiz!!!</h1>
 
-	   			<a class="button stroke smoothscroll" href="#process" title="">Learn More</a>
+	   			<a class="button stroke smoothscroll" href="#process" title="">Kitoblarni ko'rish</a>
 
 	   		</div>  
    			
@@ -104,17 +104,30 @@
 
    <!-- Process Section
    ================================================== -->
-   <section id="process">  
+   <section id="process"> 
+   <a href="#bolim"><h2>Bo'limlar</h2> </a>
+   <div class="#bolim">
 
+		<select name="Bolimlar" id="Bolimlar" style="border:0; bgcolor:#000000">
+			<option value="0">Ma'lumot kiritilmagan</option>
+				<optgroup label="Bo'limlar">
+					<option value="1">Badiy</option>
+					<option value="2">Tarixiy</option>
+					<option value="3">Darslik</option>
+					<option value="4">Ertak</option>
+				</optgroup>
+		</select>
+	</div>
    	<div class="row section-intro">
+	  
    		<div class="col-twelve with-bottom-line">
 
-           <div class="container">
+           <div class="container" id="id">
                 <h1>Assalomu alaykum</h1>
                 @yield('content')
             </div>
-            
-   			<h5>Process</h5>
+           
+   			
    			<h1>How it works?</h1>
 
    			<p class="lead">Lorem ipsum Do commodo in proident enim in dolor cupidatat adipisicing dolore officia nisi aliqua incididunt Ut veniam lorem ipsum Consectetur ut in in eu do.</p>
@@ -178,7 +191,7 @@
 		<div class="row section-intro">
    		<div class="col-twelve with-bottom-line">
 
-   			<h5>Features</h5>
+   			<h5>Xodimlar Ro'yxati</h5>
    			<h1>Great features you'll love.</h1>
 
    			<p class="lead">Lorem ipsum Do commodo in proident enim in dolor cupidatat adipisicing dolore officia nisi aliqua incididunt Ut veniam lorem ipsum Consectetur ut in in eu do.</p>

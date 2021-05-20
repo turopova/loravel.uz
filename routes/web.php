@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\FoydalanuvchiController;
+use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -20,3 +21,6 @@ Route::get('/', function () {
 
 Route::get('foydalanuvchi',[FoydalanuvchiController::class,"index"]);
 Route::get('foydalanuvchi',[FoydalanuvchiController::class,"index"])->name('foydalanuvchi.index');
+
+Route::get('Royxatdan_otish',[UserController::class,"index"])->name('Royxatdan_otish.index');
+
