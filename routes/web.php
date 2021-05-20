@@ -2,6 +2,13 @@
 
 use App\Http\Controllers\FoydalanuvchiController;
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\KitobController;
+use App\Http\Controllers\XodimController;
+use App\Http\Controllers\MuallifController;
+use App\Http\Controllers\KitobMuallifController;
+use App\Http\Controllers\IjaraController;
+use App\Http\Controllers\BolimController;
+
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -19,8 +26,9 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('foydalanuvchi',[FoydalanuvchiController::class,"index"]);
-Route::get('foydalanuvchi',[FoydalanuvchiController::class,"index"])->name('foydalanuvchi.index');
+//Route::get('foydalanuvchi',[FoydalanuvchiController::class,"index"]);
+//Route::get('foydalanuvchi',[FoydalanuvchiController::class,"index"])->name('foydalanuvchi.index');
+Route::get('kitob',[KitobController::class,"index"]);
 
-Route::get('Royxatdan_otish',[UserController::class,"index"])->name('Royxatdan_otish.index');
+
 

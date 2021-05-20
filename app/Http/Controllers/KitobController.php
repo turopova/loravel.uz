@@ -14,7 +14,8 @@ class KitobController extends Controller
      */
     public function index()
     {
-        //
+        $list=Kitob::all();
+        return view('kitob.index', compact('list'));
     }
 
     /**

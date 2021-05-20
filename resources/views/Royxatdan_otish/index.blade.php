@@ -2,7 +2,7 @@
 
 @section('content')
 
-<form action="" method="post">
+<form action="index2" method="post">
     @csrf
     name <input type="text" name="ism">
     email <input type="text" class="email">
