@@ -14,7 +14,8 @@ class BolimController extends Controller
      */
     public function index()
     {
-       
+       $list=Bolim::all();
+       return view('bolim.index', compact('list'));
     }
 
     /**

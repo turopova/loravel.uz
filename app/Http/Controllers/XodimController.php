@@ -14,7 +14,8 @@ class XodimController extends Controller
      */
     public function index()
     {
-        //
+        $list=Xodim::all();
+        return view('xodim.index', compact('list'));
     }
 
     /**

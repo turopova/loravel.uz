@@ -14,7 +14,8 @@ class MuallifController extends Controller
      */
     public function index()
     {
-        //
+        $list=Muallif::all();
+       return view('muallif.index', compact('list'));
     }
 
     /**

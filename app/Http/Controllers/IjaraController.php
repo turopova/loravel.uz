@@ -14,7 +14,8 @@ class IjaraController extends Controller
      */
     public function index()
     {
-        //
+        $list=Ijara::all();
+       return view('ijara.index', compact('list'));
     }
 
     /**

@@ -14,7 +14,8 @@ class KitobMuallifController extends Controller
      */
     public function index()
     {
-        //
+        $list=KitobMuallif::all();
+       return view('kitob_muallif.index', compact('list'));
     }
 
     /**

@@ -1,7 +1,9 @@
 <?php
 
-use App\Http\Controllers\FoydalanuvchiController;
+
 use App\Http\Controllers\UserController;
+
+use App\Http\Controllers\FoydalanuvchiController;
 use App\Http\Controllers\KitobController;
 use App\Http\Controllers\XodimController;
 use App\Http\Controllers\MuallifController;
