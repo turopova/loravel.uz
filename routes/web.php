@@ -1,7 +1,7 @@
 <?php
 
 
-use App\Http\Controllers\UserController;
+use App\Http\Controllers\RoyxatOtishController;
 
 use App\Http\Controllers\FoydalanuvchiController;
 use App\Http\Controllers\KitobController;
@@ -28,9 +28,15 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('Royxatdan_otish',[RoyxatOtishController::class,"index"])->name('Royxatdan_otish');
 //Route::get('foydalanuvchi',[FoydalanuvchiController::class,"index"]);
 //Route::get('foydalanuvchi',[FoydalanuvchiController::class,"index"])->name('foydalanuvchi.index');
 Route::get('kitob',[KitobController::class,"index"]);
+
+/*Route::get('Royxatdan_otish', function () {
+    return view('Royxatdan_otish.index');
+});
+*/
 
 
 
