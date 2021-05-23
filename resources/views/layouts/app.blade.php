@@ -50,7 +50,7 @@
 					<li><a class="smoothscroll"  href="#features" title="">Xodimlar</a></li>
 					<li><a class="smoothscroll"  href="#pricing" title="">Pricing</a></li>
 					<li><a class="smoothscroll"  href="#faq" title="">FAQ</a></li>					
-					<li class="highlight with-sep"><a href="#id" title="">Ro'yxatda o'tish</a></li>					
+					<li class="highlight with-sep"><a href="/Royxatdan_otish" title="">Ro'yxatda o'tish</a></li>					
 				</ul>
 			</nav>
 
