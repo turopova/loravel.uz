@@ -8,5 +8,6 @@
     email <input type="text" class="email">
     password: <input type="password" name="password" id="pass">
     kirish: <input type="button" value="ok" action="submit">
+    <h1>Salom</h1>
 </form>
 @endsection
