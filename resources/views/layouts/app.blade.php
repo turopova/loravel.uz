@@ -125,6 +125,8 @@
            <div class="container" id="id">
                 <h1>Assalomu alaykum</h1>
                 @yield('content')
+
+				@include('tekshirish')
            </div>
            
    			
