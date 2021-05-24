@@ -498,8 +498,8 @@ input[type="password"],
 textarea,
 select {
 	display: block;
-	height: 6rem;
-	padding: 1.5rem 2rem;
+	height: 3rem;
+	padding: 1rem 1rem;
 	border: 0;
 	outline: none;
 	vertical-align: middle;
