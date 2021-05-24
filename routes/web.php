@@ -2,7 +2,7 @@
 
 
 use App\Http\Controllers\RoyxatOtishController;
-
+use App\Http\Controllers\KirishController;
 use App\Http\Controllers\FoydalanuvchiController;
 use App\Http\Controllers\KitobController;
 use App\Http\Controllers\XodimController;
@@ -32,9 +32,10 @@ Route::get('Royxatdan_otish',[RoyxatOtishController::class,"index"])->name('Royx
 //Route::get('foydalanuvchi',[FoydalanuvchiController::class,"index"]);
 //Route::get('foydalanuvchi',[FoydalanuvchiController::class,"index"])->name('foydalanuvchi.index');
 Route::get('kitob',[KitobController::class,"index"]);
+Route::get('kirish',[KirishController::class,"index"])->name('kirish');
 
-/*Route::get('Royxatdan_otish', function () {
-    return view('Royxatdan_otish.index');
+/*Route::get('kirish', function () {
+    return view('kirish.index');
 });
 */
 

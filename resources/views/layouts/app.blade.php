@@ -79,7 +79,7 @@
 	   			<h5>Assalomu alaykum</h5>
 	   			<h1>Kutubxonamizga xush kelibsiz!!!</h1>
 
-	   			<a class="button stroke smoothscroll" href="#process" title="">Kitoblarni ko'rish</a>
+	   			<a class="button stroke smoothscroll" href="/kirish" title="">Kirish</a>
 
 	   		</div>  
    			
@@ -126,7 +126,7 @@
                 <h1>Assalomu alaykum</h1>
                 @yield('content')
 
-				@include('tekshirish')
+				
            </div>
            
    			
