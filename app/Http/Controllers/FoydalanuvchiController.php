@@ -2,7 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Bolim;
 use App\Models\Foydalanuvchi;
+use App\Models\Kitob;
+use App\Models\Xodim;
 use Illuminate\Http\Request;
 
 class FoydalanuvchiController extends Controller
@@ -17,6 +20,71 @@ class FoydalanuvchiController extends Controller
         $list=Foydalanuvchi::all();
         return view('foydalanuvchi.index', compact('list'));
         
+    }
+    public function AddBooks(Request $r)
+    {
+        
+      
+                $aa=new Kitob();
+                $aa->name=$r->name;
+                $aa->nashriyot=$r->nashir;
+                $aa->yil=$r->yil;
+                $aa->kitob_soni=$r->son;
+                $aa->bolim_id=$r->bolim;
+                $aa->save();
+    
+               
+    
+
+        // return view('Royxatdan_otish.index');
+        return redirect()->route('Royxatdan_otish');
+
+      
+        
+    }
+    
+    public function ShowBookAdd()
+    {
+       
+        $bolim=Bolim::all();
+        return view('home.index',compact('bolim'));
+        
+    }
+    
+    public function XodimAdd()
+    {
+       
+   
+        return view('home.xodim');
+        
+    }
+
+    public function AddXodim(Request $r)
+    {
+        if($file=$r->file('file')){
+            $name=$file->getClientOriginalName();
+            if($file->move('images',$name)){
+
+                $aa=new Xodim();
+                $aa->ism=$r->ism;
+                $aa->familya=$r->familiya;
+                $aa->o_ism=$r->sharif;
+                $aa->tug_sana=$r->sana;
+                $aa->passport=$r->pass;
+                // return $aa->image;
+                $aa->rasm=$name;
+
+                $aa->save();
+    
+       
+
+                // return redirect()->route('index.view');
+            }
+        }
+
+        return redirect()->route('Royxatdan_otish');
+
+
     }
 
     /**

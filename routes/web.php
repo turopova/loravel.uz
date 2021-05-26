@@ -1,7 +1,7 @@
 <?php
 
 
-use App\Http\Controllers\UserController;
+use App\Http\Controllers\RoyxatOtishController;
 
 use App\Http\Controllers\FoydalanuvchiController;
 use App\Http\Controllers\KitobController;
@@ -24,13 +24,21 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('welcome');
+// });
 
+Route::get('/',[RoyxatOtishController::class,"index"])->name('Royxatdan_otish');
 //Route::get('foydalanuvchi',[FoydalanuvchiController::class,"index"]);
 //Route::get('foydalanuvchi',[FoydalanuvchiController::class,"index"])->name('foydalanuvchi.index');
 Route::get('kitob',[KitobController::class,"index"]);
-
+Route::get('Add',[FoydalanuvchiController::class,"ShowBookAdd"])->name("ShowBookAdd");
+Route::post('Qosh',[FoydalanuvchiController::class,"AddBooks"])->name("AddBooks");
+Route::get('XodimAdd',[FoydalanuvchiController::class,"XodimAdd"])->name("XodimAdd");
+Route::post('AddXodim',[FoydalanuvchiController::class,"AddXodim"])->name("AddXodim");
+/*Route::get('Royxatdan_otish', function () {
+    return view('Royxatdan_otish.index');
+});
+*/
 
 

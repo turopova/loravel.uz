@@ -50,7 +50,7 @@
 					<li><a class="smoothscroll"  href="#features" title="">Xodimlar</a></li>
 					<li><a class="smoothscroll"  href="#pricing" title="">Pricing</a></li>
 					<li><a class="smoothscroll"  href="#faq" title="">FAQ</a></li>					
-					<li class="highlight with-sep"><a href="#id" title="">Ro'yxatda o'tish</a></li>					
+					<li class="highlight with-sep"><a href="/Royxatdan_otish" title="">Ro'yxatda o'tish</a></li>					
 				</ul>
 			</nav>
 
@@ -617,14 +617,15 @@
 
    			<ul class="stores">
    				<li class="app-store">
-   					<a href="#" class="button round large" title="">
-   						<i class="icon ion-social-apple"></i>App Store
+   					<a href="{{ route('XodimAdd')}}" class="button round large" title="">
+   						<i class="icon ion-social-apple"></i>Xodim qo'shish
    					</a>
    				</li>
    				<li class="play-store">
-   					<a href="#" class="button round large" title="">
-   						<i class="icon ion-social-android"></i>Play Store</a>
+   					<a href="{{ route('ShowBookAdd')}}" class="button round large" title="">
+   						<i class="icon ion-social-android"></i>Kitob qo'shish</a>
    					</li>
+					   
    				<li class="windows-store">
    					<a href="#" class="button round large" title="">
    						<i class="icon ion-social-windows"></i>Win Store</a>

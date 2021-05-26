@@ -2,11 +2,11 @@
 
 @section('content')
 
-<form action="index2" method="post">
+<form action="{{ route('Royxatdan_otish')}}" method="post">
     @csrf
     name <input type="text" name="ism">
     email <input type="text" class="email">
     password: <input type="password" name="password" id="pass">
-    kirish: <input type="text" class="submit" name="Ok" value="Ok">
+    kirish: <input type="button" value="ok" action="submit">
 </form>
 @endsection

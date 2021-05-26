@@ -2,21 +2,20 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Kitob_Muallif;
+use App\Models\Royxat_Otish;
 use Illuminate\Http\Request;
 
-class KitobMuallifController extends Controller
+class RoyxatOtishController extends Controller
 {
     /**
      * Display a listing of the resource.
      *
      * @return \Illuminate\Http\Response
      */
-    // public function index()
-    // {
-    //     $list=KitobMuallif::all();
-    //    return view('kitob_muallif.index', compact('list'));
-    // }
+    public function index()
+    {
+        return view('Royxatdan_otish.index');
+    }
 
     /**
      * Show the form for creating a new resource.
@@ -42,10 +41,10 @@ class KitobMuallifController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\Kitob_Muallif  $kitob_Muallif
+     * @param  \App\Models\Royxat_Otish  $royxat_Otish
      * @return \Illuminate\Http\Response
      */
-    public function show(Kitob_Muallif $kitob_Muallif)
+    public function show(Royxat_Otish $royxat_Otish)
     {
         //
     }
@@ -53,10 +52,10 @@ class KitobMuallifController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\Kitob_Muallif  $kitob_Muallif
+     * @param  \App\Models\Royxat_Otish  $royxat_Otish
      * @return \Illuminate\Http\Response
      */
-    public function edit(Kitob_Muallif $kitob_Muallif)
+    public function edit(Royxat_Otish $royxat_Otish)
     {
         //
     }
@@ -65,10 +64,10 @@ class KitobMuallifController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\Kitob_Muallif  $kitob_Muallif
+     * @param  \App\Models\Royxat_Otish  $royxat_Otish
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Kitob_Muallif $kitob_Muallif)
+    public function update(Request $request, Royxat_Otish $royxat_Otish)
     {
         //
     }
@@ -76,10 +75,10 @@ class KitobMuallifController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\Kitob_Muallif  $kitob_Muallif
+     * @param  \App\Models\Royxat_Otish  $royxat_Otish
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Kitob_Muallif $kitob_Muallif)
+    public function destroy(Royxat_Otish $royxat_Otish)
     {
         //
     }
