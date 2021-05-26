@@ -45,8 +45,9 @@
 
 	   	<nav id="main-nav-wrap">
 				<ul class="main-navigation">
-					<li class="current"><a class="smoothscroll"  href="#intro" title="">Bosh sahifa</a></li>
-					<li><a class="smoothscroll"  href="#process" title="">Kitoblar</a></li>
+					<li class="current"><a class="smoothscroll"  href="#intro" title="">BOSH SAHIFA</a></li>
+					<li>
+					<a class="smoothscroll"  href="#process" title="">KUTUBXONA HAQIDA</a></li>
 					<li><a class="smoothscroll"  href="#features" title="">Xodimlar</a></li>
 					<li><a class="smoothscroll"  href="#pricing" title="">Pricing</a></li>
 					<li><a class="smoothscroll"  href="#faq" title="">FAQ</a></li>					
@@ -651,41 +652,17 @@
 
 	            <div class="footer-logo"></div>
 
-	            <p>
-		        	1600 Amphitheatre Parkway<br>
-            	Mountain View, CA 94043 US<br>
-		        	info@lhander.com &nbsp; +123-456-789
-		        	</p>
+	            <p class="tel">(+99871) 232-83-94</p>
+					<address>
+					Ish vaqti 09:00&nbsp;20:00 <br>
+					Dam olish kuni 09:00&nbsp;17:00
+					</address>
+					<p>O‘zbekiston Respublikasi Prezidenti Administratsiyasi huzuridagi Axborot va ommaviy kommunikatsiyalar agentligining Alisher Navoiy nomidagi O‘zbekiston Milliy kutubxonasi</p>
 
 		      </div> <!-- /footer-info -->
 
-	      	<div class="col-two tab-1-3 mob-1-2 site-links">
+	       
 
-	      		<h4>Site Links</h4>
-
-	      		<ul>
-	      			<li><a href="#">About Us</a></li>
-						<li><a href="#">Blog</a></li>
-						<li><a href="#">FAQ</a></li>
-						<li><a href="#">Terms</a></li>
-						<li><a href="#">Privacy Policy</a></li>
-					</ul>
-
-	      	</div> <!-- /site-links -->  
-
-	      	<div class="col-two tab-1-3 mob-1-2 social-links">
-
-	      		<h4>Social</h4>
-
-	      		<ul>
-	      			<li><a href="#">Twitter</a></li>
-						<li><a href="#">Facebook</a></li>
-						<li><a href="#">Dribbble</a></li>
-						<li><a href="#">Google+</a></li>
-						<li><a href="#">Skype</a></li>
-					</ul>
-	      	           	
-	      	</div> <!-- /social --> 
 
 	      	<div class="col-four tab-1-3 mob-full footer-subscribe">
 
