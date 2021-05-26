@@ -19,7 +19,8 @@
    ================================================== -->
    <link rel="stylesheet" href="{{ asset('vi/css/base.css') }}">  
    <link rel="stylesheet" href="{{ asset('vi/css/main.css') }}">
-   <link rel="stylesheet" href="{{ asset('vi/css/vendor.css') }}">     
+   <link rel="stylesheet" href="{{ asset('vi/css/vendor.css') }}">  
+   <link rel="stylesheet" href="{{ asset('style/css/stl.css') }}">   
 
    <!-- script
    ================================================== -->
@@ -80,7 +81,7 @@
 	   			<h5>Assalomu alaykum</h5>
 	   			<h1>Kutubxonamizga xush kelibsiz!!!</h1>
 
-	   			<a class="button stroke smoothscroll" href="#process" title="">Kitoblarni ko'rish</a>
+	   			<a class="button stroke smoothscroll" href="/kirish" title="">Kirish</a>
 
 	   		</div>  
    			
@@ -106,7 +107,7 @@
    <!-- Process Section
    ================================================== -->
    <section id="process"> 
-   <a href="#bolim"><h2>Bo'limlar</h2> </a>
+   <!--<a href="#bolim"><h2>Bo'limlar</h2> </a>
    <div class="#bolim">
 
 		<select name="Bolimlar" id="Bolimlar" style="border:0; bgcolor:#000000">
@@ -118,23 +119,12 @@
 					<option value="4">Ertak</option>
 				</optgroup>
 		</select>
-	</div>
-   	<div class="row section-intro">
-	  
-   		<div class="col-twelve with-bottom-line">
+	</div>-->
 
-           <div class="container" id="id">
+	<div class="container" id="id">
                 <h1>Assalomu alaykum</h1>
                 @yield('content')
-           </div>
-           
-   			
-   			<h1>How it works?</h1>
-
-   			<p class="lead">Lorem ipsum Do commodo in proident enim in dolor cupidatat adipisicing dolore officia nisi aliqua incididunt Ut veniam lorem ipsum Consectetur ut in in eu do.</p>
-
-   		</div>   		
-   	</div>
+    </div>
 
    	<div class="row process-content">
 
@@ -187,6 +177,11 @@
 
    <!-- features Section
    ================================================== -->
+   <section id="xabar">
+		<div>
+		<h2>Dastur muvafaqqiyatli yakunlandi!!!</h2>
+		</div>
+   </section>
 	<section id="features">
 
 		<div class="row section-intro">
@@ -723,6 +718,10 @@
    <script src="{{ asset('vi/js/jquery-migrate-1.2.1.min.js') }}"></script>
    <script src="{{ asset('vi/js/plugins.js') }}"></script>
    <script src="{{ asset('vi/js/main.js') }}"></script>
+   <script type="text/javascript" id="jsxabar">   
+    window.alert("1-satr\n2-satr\n\n4-satr");
+	</script> 
+	<script type="text/javascript">   if(window.confirm("Tugmalardan birini bosing")) {      window.alert("OK tugmasi bosildi");      } else {         window.alert("Отмена tugmasi bosildi");         }  </script> 
 
 </body>
 

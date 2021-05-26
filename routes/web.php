@@ -3,6 +3,7 @@
 
 use App\Http\Controllers\RoyxatOtishController;
 
+use App\Http\Controllers\KirishController;
 use App\Http\Controllers\FoydalanuvchiController;
 use App\Http\Controllers\KitobController;
 use App\Http\Controllers\XodimController;
@@ -28,6 +29,7 @@ use Illuminate\Support\Facades\Route;
 //     return view('welcome');
 // });
 
+
 Route::get('/',[RoyxatOtishController::class,"index"])->name('Royxatdan_otish');
 //Route::get('foydalanuvchi',[FoydalanuvchiController::class,"index"]);
 //Route::get('foydalanuvchi',[FoydalanuvchiController::class,"index"])->name('foydalanuvchi.index');
@@ -40,5 +42,18 @@ Route::post('AddXodim',[FoydalanuvchiController::class,"AddXodim"])->name("AddXo
     return view('Royxatdan_otish.index');
 });
 */
+
+Route::get('Royxatdan_otish',[RoyxatOtishController::class,"index"])->name('Royxatdan_otish');
+//Route::get('foydalanuvchi',[FoydalanuvchiController::class,"index"]);
+//Route::get('foydalanuvchi',[FoydalanuvchiController::class,"index"])->name('foydalanuvchi.index');
+Route::get('kitob',[KitobController::class,"index"]);
+Route::get('kirish',[KirishController::class,"index"])->name('kirish');
+
+/*Route::get('kirish', function () {
+    return view('kirish.index');
+});
+*/
+
+
 
 
