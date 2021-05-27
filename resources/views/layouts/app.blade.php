@@ -49,10 +49,11 @@
 					<li class="current"><a class="smoothscroll"  href="#intro" title="">BOSH SAHIFA</a></li>
 					<li>
 					<a class="smoothscroll"  href="#process" title="">KUTUBXONA HAQIDA</a></li>
-					<li><a class="smoothscroll"  href="#features" title="">Xodimlar</a></li>
+					<!--<li><a class="smoothscroll"  href="#features" title="">Xodimlar</a></li>
 					<li><a class="smoothscroll"  href="#pricing" title="">Pricing</a></li>
-					<li><a class="smoothscroll"  href="#faq" title="">FAQ</a></li>					
-					<li class="highlight with-sep"><a href="/Royxatdan_otish" title="">Ro'yxatda o'tish</a></li>					
+					-->
+					<li><a class="smoothscroll"  href="#faq" title="">ADMIN</a></li>					
+					<li class="highlight with-sep"><a href="/Royxatdan_otish" title="">RO'YXATDAN O'TISH</a></li>					
 				</ul>
 			</nav>
 
@@ -81,7 +82,7 @@
 	   			<h5>Assalomu alaykum</h5>
 	   			<h1>Kutubxonamizga xush kelibsiz!!!</h1>
 
-	   			<a class="button stroke smoothscroll" href="/kirish" title="">Kirish</a>
+	   			<a href="{{ route('muallif') }}" class="button stroke smoothscroll" title="">KITOBLAR</a>
 
 	   		</div>  
    			
@@ -304,7 +305,7 @@
    		<div class="col-twelve with-bottom-line">
 
    			<h5>Our Pricing</h5>
-   			<h1>Pick the best plan for you.</h1>
+   			<h1>Kutubxonadagi barcha kitoblar ro'yxati</h1>
 
    			<p class="lead">Lorem ipsum Do commodo in proident enim in dolor cupidatat adipisicing dolore officia nisi aliqua incididunt Ut veniam lorem ipsum Consectetur ut in in eu do.</p>
 
@@ -321,24 +322,15 @@
 
             		<div class="top-part">
 
-	            		<h3 class="plan-title">Starter</h3>
-		               <p class="plan-price"><sup>$</sup>4.99</p>
-		               <p class="price-month">Per month</p>
-		               <p class="price-meta">Billed Annually.</p>
-
+	            		<h3 class="plan-title">Badiiy</h3>
+		               <p class="plan-price"></p>
 	            	</div>                
 
 	               <div class="bottom-part">
 
 	            		<ul class="features">
-		                  <li><strong>3GB</strong> Storage</li>
-		                  <li><strong>10GB</strong> Bandwidth</li>		                  
-		                  <li><strong>5</strong> Databases</li>		                  
-		                  <li><strong>30</strong> Email Accounts</li>
+		                  <li> </li>
 		               </ul>
-
-		               <a class="button large" href="">Get Started</a>
-
 	            	</div>
 
             	</div>           	
@@ -351,24 +343,15 @@
 
             		<div class="top-part" data-info="recommended">
 
-	            		<h3 class="plan-title">Standard</h3>
-		               <p class="plan-price"><sup>$</sup>9.99</p>
-		               <p class="price-month">Per month</p>
-							<p class="price-meta">Billed Annually.</p>
-
+	            		<h3 class="plan-title">She'riy</h3>
+		               <p class="plan-price"></p>
 	            	</div>               
 
 	               <div class="bottom-part">
 
 	            		<ul class="features">
-		                  <li><strong>5GB</strong> Storage</li>
-		                  <li><strong>15GB</strong> Bandwidth</li>		                  
-		                  <li><strong>7</strong> Databases</li>		                  
-		                  <li><strong>40</strong> Email Accounts</li>
+		                  <li></li>
 		               </ul>
-
-		               <a class="button large" href="">Get Started</a>
-
 	            	</div>
             		
             	</div>            	                 
@@ -381,24 +364,16 @@
 
             		<div class="top-part">
 
-	            		<h3 class="plan-title">Premium</h3>
-		               <p class="plan-price"><sup>$</sup>19.99</p>
-		               <p class="price-month">Per month</p>
-		                <p class="price-meta">Billed Annually.</p>		               
+	            		<h3 class="plan-title">Tarixiy</h3>
+		               <p class="plan-price"></p>	               
 
 	            	</div> 
 	            	
 						<div class="bottom-part">
 
 	            		<ul class="features">
-		                  <li><strong>10GB</strong> Storage</li>
-		                  <li><strong>30GB</strong> Bandwidth</li>		                  
-		                  <li><strong>15</strong> Databases</li>		                  
-		                  <li><strong>60</strong> Email Accounts</li>
+		                  <li></li>
 		               </ul>
-
-		               <a class="button large" href="">Get Started</a>
-
 	            	</div>	            		                
             		
             	</div>                              
@@ -411,23 +386,15 @@
 
             		<div class="top-part">
 
-	            		<h3 class="plan-title">Ultimate</h3>
-		               <p class="plan-price"><sup>$</sup>29.99</p>
-		               <p class="price-month">Per month</p>
-		               <p class="price-meta">Billed Annually.</p>		               
-
+	            		<h3 class="plan-title">Darslik</h3>
+		               <p class="plan-price"></p>
 	            	</div> 
 	            	
 						<div class="bottom-part">
 
 	            		<ul class="features">
-		                  <li><strong>20GB</strong> Storage</li>
-		                  <li><strong>40GB</strong> Bandwidth</li>		                  
-		                  <li><strong>25</strong> Databases</li>		                  
-		                  <li><strong>100</strong> Email Accounts</li>
+		                  <li></li>
 		               </ul>
-
-		               <a class="button large" href="">Get Started</a>
 
 	            	</div>	            		                
             		
@@ -509,9 +476,11 @@
    		<div class="col-twelve with-bottom-line">
 
    			<h5>Faq</h5>
-   			<h1>Questions and Answers.</h1>
+   			<h1>Kutubxonalar aslida qanday boʻlishi kerak?</h1>
 
-   			<p class="lead">Lorem ipsum Do commodo in proident enim in dolor cupidatat adipisicing dolore officia nisi aliqua incididunt Ut veniam lorem ipsum Consectetur ut in in eu do.</p>
+   			<p >
+			 Oʻzbekiston misolida aytadigan boʻlsak, avvalo bugun yurtimizda zamonaviy texnologiyalar bilan jihozlangan Alisher Navoiy nomidagi Oʻzbekiston Milliy kutubxonasi, 14 ta viloyat axborot-kutubxona markazi, tuman markazlari va shaharlardagi taʼlim muassasalarida 200 ga yaqin axborot-resurs markazi tomonidan aholiga kutubxona xizmatlari hamda “Kitob olami”, “Sharq ziyokori” va “Oʻzdavkitobsavdotaʼminoti” majmualari tomonidan kitob savdosi xizmati koʻrsatish yoʻlga qoʻyilgan. Bu esa aholisi 33 milliondan oshiq boʻlgan respublikada oʻrtacha 153 ming kishiga 1 kutubxona toʻgʻri keladi, degani.
+				</p>
 
    		</div>   		
    	</div>
@@ -607,24 +576,46 @@
 
    		<div class="col-twelve">
 
-   			<h1 class="h01">Get started now. Try Lhander free for 30 days.</h1>
+   			<h1 class="h01">Xush kelibsiz Admin!!!</h1>
 
-   			<p class="lead">Download the app now. Available on the:</p>
+   			<p class="lead">Quyidagilardan qaysi birini bajarmoqchisiz. Tanlang va o'stiga sichqonchani olib borib o'ng tugmachasini bosing.</p>
 
    			<ul class="stores">
-   				<li class="app-store">
+   				<li class="play-store">
    					<a href="{{ route('XodimAdd')}}" class="button round large" title="">
-   						<i class="icon ion-social-apple"></i>Xodim qo'shish
+   						<i class="icon ion-social-android"></i>Xodim qo'shish
    					</a>
    				</li>
+
+				<li class="play-store">
+   					<a href="{{ route('FoydalanuvchiAdd')}}" class="button round large" title="">
+   						<i class="icon ion-social-android"></i>Foydalanuvchi qo'shish</a>
+   				</li>
+
    				<li class="play-store">
    					<a href="{{ route('ShowBookAdd')}}" class="button round large" title="">
    						<i class="icon ion-social-android"></i>Kitob qo'shish</a>
    					</li>
+
+					   <li class="app-store">
+   					<a href="{{ route('XodimAdd')}}" class="button round large" title="">
+   						<i class="icon ion-social-apple"></i>Xodim o'chirish
+   					</a>
+   				</li>
+
+				<li class="app-store">
+   					<a href="{{ route('FoydalanuvchiAdd')}}" class="button round large" title="">
+   						<i class="icon ion-social-apple"></i>Foydalanuvchi o'chirish</a>
+   				</li>
+
+   				<li class="app-store">
+   					<a href="{{ route('ShowBookAdd')}}" class="button round large" title="">
+   						<i class="icon icon ion-social-apple"></i>Kitob o'chirish</a>
+   					</li>
 					   
    				<li class="windows-store">
    					<a href="#" class="button round large" title="">
-   						<i class="icon ion-social-windows"></i>Win Store</a>
+   						<i class="icon ion-social-windows"></i>Orqaga qaytish</a>
    					</li>
    			</ul>
 
@@ -652,34 +643,13 @@
 					Ish vaqti 09:00&nbsp;20:00 <br>
 					Dam olish kuni 09:00&nbsp;17:00
 					</address>
-					<p>O‘zbekiston Respublikasi Prezidenti Administratsiyasi huzuridagi Axborot va ommaviy kommunikatsiyalar agentligining Alisher Navoiy nomidagi O‘zbekiston Milliy kutubxonasi</p>
-
+					
 		      </div> <!-- /footer-info -->
 
 	       
 
 
-	      	<div class="col-four tab-1-3 mob-full footer-subscribe">
-
-	      		<h4>Subscribe</h4>
-
-	      		<p>Keep yourself updated. Subscribe to our newsletter.</p>
-
-	      		<div class="subscribe-form">
-	      	
-	      			<form id="mc-form" class="group" novalidate="true">
-
-							<input type="email" value="" name="dEmail" class="email" id="mc-email" placeholder="type email &amp; hit enter" required=""> 
-	   		
-			   			<input type="submit" name="subscribe" >
-		   	
-		   				<label for="mc-email" class="subscribe-message"></label>
-			
-						</form>
-
-	      		</div>	      		
-	      	           	
-	      	</div> <!-- /subscribe -->         
+	            
 
 	      </div> <!-- /row -->
 
@@ -692,7 +662,7 @@
 
       		<div class="col-twelve">
 	      		<div class="copyright">
-		         	<span>© Copyright Lhander 2016.</span> 
+		         	<span>© Copyright Lhander 2021.</span> 
 		         	<span>Design by <a href="http://www.styleshout.com/">styleshout</a></span>		         	
 		         </div>
 
@@ -719,10 +689,7 @@
    <script src="{{ asset('vi/js/plugins.js') }}"></script>
    <script src="{{ asset('vi/js/main.js') }}"></script>
    <script type="text/javascript" id="jsxabar">   
-    window.alert("1-satr\n2-satr\n\n4-satr");
-	</script> 
-	<script type="text/javascript">   if(window.confirm("Tugmalardan birini bosing")) {      window.alert("OK tugmasi bosildi");      } else {         window.alert("Отмена tugmasi bosildi");         }  </script> 
-
+    
 </body>
 
 </html>

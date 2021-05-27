@@ -17,7 +17,41 @@ class XodimController extends Controller
         $list=Xodim::all();
         return view('xodim.index', compact('list'));
     }
+    public function XodimAdd()
+    {
+       
+   
+        return view('home.xodim');
+        
+    }
 
+    public function AddXodim(Request $r)
+    {
+        if($file=$r->file('file')){
+            $name=$file->getClientOriginalName();
+            if($file->move('images',$name)){
+
+                $aa=new Xodim();
+                $aa->ism=$r->ism;
+                $aa->familya=$r->familiya;
+                $aa->o_ism=$r->sharif;
+                $aa->tug_sana=$r->sana;
+                $aa->passport=$r->pass;
+                // return $aa->image;
+                $aa->rasm=$name;
+
+                $aa->save();
+    
+       
+
+                // return redirect()->route('index.view');
+            }
+        }
+
+        return redirect()->route('Royxatdan_otish');
+
+
+    }
     /**
      * Show the form for creating a new resource.
      *

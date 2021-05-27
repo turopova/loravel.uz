@@ -36,23 +36,26 @@ Route::get('/',[RoyxatOtishController::class,"index"])->name('Royxatdan_otish');
 Route::get('kitob',[KitobController::class,"index"]);
 Route::get('Add',[FoydalanuvchiController::class,"ShowBookAdd"])->name("ShowBookAdd");
 Route::post('Qosh',[FoydalanuvchiController::class,"AddBooks"])->name("AddBooks");
-Route::get('XodimAdd',[FoydalanuvchiController::class,"XodimAdd"])->name("XodimAdd");
-Route::post('AddXodim',[FoydalanuvchiController::class,"AddXodim"])->name("AddXodim");
+Route::get('XodimAdd',[XodimController::class,"XodimAdd"])->name("XodimAdd");
+Route::post('AddXodim',[XodimControllerController::class,"AddXodim"])->name("AddXodim");
+Route::get('FoydalanuvchiAdd',[FoydalanuvchiController::class,"FoydalanuvchiAdd"])->name("FoydalanuvchiAdd");
+Route::post('AddFoydalanuvchi',[FoydalanuvchiController::class,"AddFoydalanuvchi"])->name("AddFoydalanuvchi");
 /*Route::get('Royxatdan_otish', function () {
     return view('Royxatdan_otish.index');
 });
 */
 
 Route::get('Royxatdan_otish',[RoyxatOtishController::class,"index"])->name('Royxatdan_otish');
+Route::get('muallif',[MuallifController::class,"index"])->name('muallif');
 //Route::get('foydalanuvchi',[FoydalanuvchiController::class,"index"]);
 //Route::get('foydalanuvchi',[FoydalanuvchiController::class,"index"])->name('foydalanuvchi.index');
 Route::get('kitob',[KitobController::class,"index"]);
-Route::get('kirish',[KirishController::class,"index"])->name('kirish');
+//Route::get('kirish',[KirishController::class,"index"])->name('kirish');
 
-/*Route::get('kirish', function () {
-    return view('kirish.index');
-});
-*/
+//Route::get('kirish', function () {
+  //  return view('kirish');
+//});
+
 
 
 

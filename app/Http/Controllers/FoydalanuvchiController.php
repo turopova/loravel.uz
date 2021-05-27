@@ -21,6 +21,44 @@ class FoydalanuvchiController extends Controller
         return view('foydalanuvchi.index', compact('list'));
         
     }
+
+    public function FoydalanuvchiAdd()
+    {
+       
+   
+        return view('foydalanuvchi.index2');
+        
+    }
+
+    public function AddFoydalanuvchi(Request $r)
+    {
+        if($file=$r->file('file')){
+            $name=$file->getClientOriginalName();
+            if($file->move('images',$name)){
+
+                $aa=new Foydalanuvchi();
+                $aa->ism=$r->ism;
+                $aa->familya=$r->familiya;
+                $aa->o_ism=$r->sharif;
+                $aa->tug_sana=$r->sana;
+                $aa->passport=$r->pass;
+                $aa->karta_raqam=$r->karta_raqam;
+                // return $aa->image;
+                $aa->rasm=$name;
+
+                $aa->save();
+    
+       
+
+                // return redirect()->route('index.view');
+            }
+        }
+
+        return redirect()->route('Royxatdan_otish');
+
+
+    }
+
     public function AddBooks(Request $r)
     {
         
@@ -50,7 +88,7 @@ class FoydalanuvchiController extends Controller
         return view('home.index',compact('bolim'));
         
     }
-    
+    /*
     public function XodimAdd()
     {
        
@@ -86,6 +124,7 @@ class FoydalanuvchiController extends Controller
 
 
     }
+    */
 
     /**
      * Show the form for creating a new resource.

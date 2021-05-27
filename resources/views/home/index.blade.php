@@ -61,9 +61,14 @@ div {
 
     <label for="country">Kitob bo'limi</label>
     <select  name="bolim">
-            @foreach ($bolim as $x)
-            <option value="{{$x->id}}">{{$x->name}} </option>
-            @endforeach
+           
+            <option value="0"
+            >Ma'lumot kiritilmagan</option>
+            <option value="1">Badiy</option>
+					  <option value="2">Tarixiy</option>
+					  <option value="3">Darslik</option>
+					  <option value="4">Ertak</option>
+           
     </select>
   
     <input type="submit" value="Saqlash">

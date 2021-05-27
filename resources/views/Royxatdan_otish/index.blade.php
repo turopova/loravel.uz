@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-
+<!--
 <form action="{{ route('Royxatdan_otish')}}" method="post">
     @csrf
     name <input type="text" name="ism">
@@ -22,6 +22,6 @@
             kirish: <input type="button" value="ok" action="#intro">
         </form>
     </div>
-
+-->
 
 @endsection
